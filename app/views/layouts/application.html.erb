@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GreenCenterClient</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <a href="/client/signup">Sign Up</a>
+    <a href="/client/login">Log In</a>
+    <a href="/client/logout" data-method="delete">Log Out</a> <br>
+    <%= yield %>
+  </body>
+
+  
+  
+
+</html>
