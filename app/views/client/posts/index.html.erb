@@ -4,5 +4,7 @@
 <h5> <%= post["body"] %> </h5>
 <h5> <%= post["user"]["username"] %> </h5>
 <img src="<%= post["user"]["avatar"] %>" alt="">
+<br>
+<a href="/client/posts/<%= post['id'] %>">See Post</a><br>
 
 <% end %> 

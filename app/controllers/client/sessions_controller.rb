@@ -7,9 +7,9 @@ class SessionsController < ApplicationController
   def create
     client_params = {
      auth: {
-            email: params[:email],
-            password: params[:password]
-           }
+        email: params[:email],
+        password: params[:password]
+       }
      }     
 
     response = Unirest.post(
@@ -30,7 +30,7 @@ class SessionsController < ApplicationController
   def destroy
     session[:jwt] = nil
     flash[:success] = 'Successfully logged out!'
-    redirect_to '/client/login'
+    redirect_to '/client/signup'
   end
   
 end

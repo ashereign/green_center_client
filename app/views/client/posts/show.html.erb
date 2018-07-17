@@ -5,7 +5,12 @@
 <h4>Link: <%= @post["link"] %></h4>
 
 
-<a href="/client/posts"> Product Index </a>
+
+<a href="/client/posts/<%= @post['id'] %>/edit">Edit</a><br> 
+<a href="/client/posts/<%= @post['id'] %>" data-method="delete">Delete Post</a>
+<br>
+<br>
+<a href="/client/posts"> Back to Home </a>
 
 
 

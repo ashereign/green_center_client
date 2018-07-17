@@ -1,0 +1,11 @@
+<h2> Edit Post </h2>
+
+<%= form_tag "/client/posts/#{@post['id']}", method: :patch do %>
+
+  <div>
+    Name: <input type="text" name="title" value="<%= @post['title'] %>" />
+  </div>
+
+  <input type="submit" name="Update" value="Update Post"/>
+  </div>
+  <% end %> 

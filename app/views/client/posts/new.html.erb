@@ -1,0 +1,22 @@
+
+
+<h2> Got a new post idea? </h2>
+
+
+  <%= form_tag "/client/posts", method: :post do %>
+  <div>
+    Title: <input type="text" name="name" value="<%= @post['name'] %>"/>
+  </div>
+  <div>
+    Body: <input type="text" name="body" value="<%= @post['price'] %>"/>
+  </div>
+<div>
+  Main Picture: <input type="text" name="picture" value="<%= @post['main_picture'] %>"/>
+</div>
+<div>
+  Link: <input type="text" name="link" value="<%= @post['link'] %>"/>
+</div>
+<div>
+<input type="submit" name="" value="Create Post"/>
+</div>
+  <% end %>
